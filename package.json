@@ -1,0 +1,22 @@
+{
+  "name": "beckyandjoel",
+  "version": "1.0.0",
+  "description": "becky and joel's wedding website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jarmey@github.com/jarmey/beckyandjoel.git"
+  },
+  "author": "Joel Armey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarmey/beckyandjoel/issues"
+  },
+  "homepage": "https://github.com/jarmey/beckyandjoel#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}

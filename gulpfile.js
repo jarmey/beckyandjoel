@@ -18,3 +18,5 @@ gulp.task('build-html', function () {
   return gulp.src('src/html/index.html')
     .pipe(gulp.dest('dist/'));
 });
+
+gulp.task('default', gulp.series('build-css', 'build-scripts', 'build-html'));

@@ -6,7 +6,7 @@ $( document ).ready(function() {
         var docViewBottom = docViewTop + $(window).height();
         var elemTop = null;
         elems.each(function () {
-            elemTop = $(this).offset().top;
+          elemTop = $(this).offset().top;
             if ((elemTop <= docViewBottom) && (elemTop >= docViewTop) && !$(this).hasClass('animated')) {
                 elemsArr.push($(this));
             }

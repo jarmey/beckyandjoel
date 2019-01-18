@@ -1,0 +1,58 @@
+body, p, ul, li, a {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: 'Playfair Display';
+  font-family: 'Lato';
+  font-family: 'Pacifico';
+  font-family: 'League Script';
+  font-size:22px;
+  margin: 0;
+  padding: 0;
+  background: url("../images/beckyandjoel.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.black-overlay {
+  height:100%;
+  width:100%;
+  background: #000;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+.beckyandjoel {
+  color: #fff;
+  height: 100%;
+  width:100%;
+}
+
+.content {
+  padding:2rem;
+}
+
+.coming-soon {
+  padding-bottom: 20px;
+  font-size:20px;
+}
+
+/* utilities */
+.fancy {font-family: 'Berkshire Swash';}
+.d-inline-block {display: inline-block;}
+.d-flex {display: flex}
+.flex-column {flex-direction: column;}
+.pos-relative {position: relative;}
+.pos-absolute {position: absolute;}
+
+/* animations */
+.animate {
+  opacity: 0;
+}
+
+.animated {
+  opacity: 1;
+  transition: opacity .5s ease;
+}

@@ -1,16 +1,18 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var babel = require('gulp-babel');
+var concat = require('gulp-concat');
 
 gulp.task('build-css', function(){
-  return gulp.src('src/scss/beckyandjoel.scss')
+  return gulp.src('src/styles/*.*')
     .pipe(sass()) // Using gulp-sass
     .pipe(gulp.dest('dist/css'))
 });
 
 gulp.task('build-scripts', function () {
-  return gulp.src('src/js/app.js')
+  return gulp.src(['node_modules/jquery/dist/jquery.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js', 'src/js/*.*'])
     .pipe(babel())
+    .pipe(concat('app.js'))
     .pipe(gulp.dest('dist/js'));
 });
 

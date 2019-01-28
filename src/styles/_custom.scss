@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.beckyandjoel {
+  .top-section {
+    background: url(../images/heart-in-sand.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .beckyandjoel-photo {
+    img {
+      position: absolute;
+      right: 10%;
+      height: 80%;
+      border: solid 10px white;
+      top: 5%;
+    }
+  }
+}

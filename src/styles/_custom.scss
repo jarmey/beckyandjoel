@@ -1,26 +1,74 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: #d5ffee;
 }
 
 .beckyandjoel {
-  .top-section {
-    background: url(../images/heart-in-sand.jpg) no-repeat center center fixed;
+  height: 100%;
+  width: 100%;
+
+  .image-border {
+    height: 400px;
+    margin-top: -85px;
+    z-index: 2;
+    position: fixed;
+    pointer-events: none;
+
+    &.top-right {
+      right: -85px;
+    }
+
+    &.top-left {
+      transform: scaleX(-1);
+      left: -85px;
+    }
+  }
+
+  .main {
+    height:100%;
+    background: #eda7a8;
+
+    h1 {
+      font-family: 'Parisienne', cursive;
+      font-size: 7rem;
+    }
+
+    h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 28px;
+    }
+  }
+
+  .welcome {
+    color: white;
+    font-size: 18px;
+    padding: 160px 60px;
+  }
+
+  .content {
+    height: calc(100vh + 22px);
+  }
+
+  .photo {
+    background: url(../images/beckyandjoel.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    right: 0;
+
+    img {
+      border: solid 10px white;
+      float: right;
+    }
   }
 
-  .beckyandjoel-photo {
-    img {
-      position: absolute;
-      right: 10%;
-      height: 80%;
-      border: solid 10px white;
-      top: 5%;
-    }
+  /* form */
+  .info h2 {
+    color: red;
   }
 }

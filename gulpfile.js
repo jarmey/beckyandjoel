@@ -30,8 +30,13 @@ gulp.task('build-images', function () {
 });
 
 gulp.task('build-html', function () {
-  return gulp.src('src/html/index.html')
+  return gulp.src('src/html/*.*')
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('default', gulp.series('clean', 'build-css', 'build-scripts', 'build-images', 'build-html'));
+gulp.task('build-favicon', function () {
+  return gulp.src('src/favicon/*.*')
+    .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('default', gulp.series('clean', 'build-css', 'build-scripts', 'build-images', 'build-html', 'build-favicon'));

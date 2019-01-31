@@ -281,9 +281,6 @@ img,a img{
   font-family:"Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
   letter-spacing:.01em
 }
-.wufoo li{
-  width:64%
-}
 .info{
   display:inline-block;
   clear:both;
@@ -501,13 +498,6 @@ input.text,input.search,input.file,textarea.textarea,select.select{
   margin:0;
   padding:2px 0
 }
-input.text,input.search,textarea.textarea{
-  border-top:1px solid #7c7c7c;
-  border-left:1px solid #c3c3c3;
-  border-right:1px solid #c3c3c3;
-  border-bottom:1px solid #ddd;
-  background:#fff url(../images/fieldbg.gif) repeat-x top
-}
 input.nospin::-webkit-inner-spin-button,input.nospin::-webkit-outer-spin-button{
   -webkit-appearance:none;
   margin:0
@@ -562,9 +552,6 @@ form li.price .right{
 }
 input.small,select.small{
   width:25%
-}
-input.medium,select.medium{
-  width:50%
 }
 input.large,select.large{
   width:100%

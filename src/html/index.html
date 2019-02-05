@@ -26,15 +26,17 @@
   <meta name="msapplication-TileImage" content="favicon-144.png">
   <meta name="msapplication-config" content="/browserconfig.xml">
   <!-- ****** faviconit.com favicons ****** -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div class="beckyandjoel container-fluid">
   <img class="image-border top-right" src="images/border-top-right.png" />
   <img class="image-border top-left" src="images/border-top-right.png" />
   <div class="row main">
-    <div class="welcome col-6">
+    <div class="welcome col-lg-6">
       <div class="content">
         <h1>Becky & Joel</h1>
+        <img src="images/beckyandjoel.jpg" class="d-inline-block d-lg-none"/>
         <h2>We're Getting Married!</h2>
         <p>
           Help us celebrate! We will have a short ceremony followed by an evening of music and margaritas. Dinner will be catered, likely mexican but the menu has not yet been determined. Please let us know if you will be joining us and RSVP Below.
@@ -44,10 +46,10 @@
         <i class="fa fa-angle-down read-more"></i>
       </div>
     </div>
-    <div class="photo col-6"></div>
+    <div class="photo col-lg-6 d-none d-lg-flex"></div>
   </div>
   <div class="row rsvp">
-    <div class="rsvp-form col-6">
+    <div class="rsvp-form col-lg-6 col-12">
       <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
             action="https://jarmey.wufoo.com/forms/zjrj2931h75ifv/#public">
         <h2 class="dark mb-3">RSVP</h2>
@@ -146,7 +148,6 @@
         </ul>
       </form>
     </div>
-    <div class="col-6"></div>
   </div>
 </div>
 <script src="js/app.js"></script>

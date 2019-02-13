@@ -1,9 +1,73 @@
+/* Desktop */
 @media only screen
 and (min-width: 992px)
  {
   .beckyandjoel {
+
+    &:before {
+      display: none;
+    }
+
     .photo{
+      border: none;
       position: fixed;
+    }
+    .image-border {
+      height: 400px;
+      margin-top: -85px;
+
+      &.top-right {
+        right: -85px;
+      }
+
+      &.top-left {
+        left: -85px;
+      }
+    }
+  }
+}
+
+/* Tablet and up */
+@media only screen
+and (min-width: 576px) {
+  .beckyandjoel {
+    font-size: 18px;
+
+    &:before {
+      background-size: 600px;
+    }
+
+    h1 {
+      font-size: 6rem;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .welcome {
+      padding: 160px 60px 0;
+    }
+
+    .rsvp-form {
+      padding: 200px 120px 0 120px;
+
+      &:before {
+        background-size: 600px;
+      }
+    }
+
+    .image-border {
+      height: 320px;
+      margin-top: -65px;
+
+      &.top-right {
+        right: -80px;
+      }
+
+      &.top-left {
+        left: -80px;
+      }
     }
   }
 }

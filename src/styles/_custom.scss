@@ -4,13 +4,28 @@ html, body {
 }
 
 .beckyandjoel {
-  font-size: 18px;
+  font-size: 16px;
   height: 100%;
   width: 100%;
 
+  &:before {
+    background: url(../images/bottom-floral.png) no-repeat center bottom;
+    content: '';
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-size: 460px;
+    top: -35px;
+    transform: scaleY(-1);
+    z-index: 1;
+    pointer-events: none;
+  }
+
   h1 {
     font-family: 'Parisienne', cursive;
-    font-size: 6rem;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
   }
 
   h2 {
@@ -27,31 +42,31 @@ html, body {
   }
 
   .image-border {
-    height: 400px;
-    margin-top: -85px;
+    height: 160px;
+    margin-top: -32px;
     z-index: 2;
     position: fixed;
     pointer-events: none;
 
     &.top-right {
-      right: -85px;
+      right: -36px;
     }
 
     &.top-left {
       transform: scaleX(-1);
-      left: -85px;
+      left: -36px;
     }
   }
 
   .main {
-    height:100%;
+    min-height:100%;
     background: #eda7a8;
   }
 
   .welcome {
     color: white;
     font-size: 18px;
-    padding: 160px 60px;
+    padding: 120px 30px;
 
     .read-more {
       font-size: 32px;
@@ -64,7 +79,7 @@ html, body {
   }
 
   .rsvp-form {
-    padding: 160px 120px 0 120px;
+    padding: 80px 30px;
     position: relative;
     overflow: hidden;
     min-height: calc(100vh + 50px);
@@ -87,13 +102,17 @@ html, body {
       height: 100%;
       width: 100%;
       left: 0;
-      background-size: 600px;
+      background-size: 460px;
       bottom: -35px;
     }
   }
 
   .content {
     min-height: calc(100vh - 160px);
+
+    img {
+      border: solid 5px white;
+    }
   }
 
   .photo {
@@ -106,11 +125,6 @@ html, body {
     height: 100vh;
     right: 0;
     position: relative;
-
-    img {
-      border: solid 10px white;
-      float: right;
-    }
   }
 
   /* form */

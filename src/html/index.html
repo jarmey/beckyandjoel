@@ -30,20 +30,30 @@
 </head>
 <body>
 <div class="beckyandjoel container-fluid">
-  <img class="image-border top-right" src="images/border-top-right.png" />
-  <img class="image-border top-left" src="images/border-top-right.png" />
+  <img class="image-border top-right hidden-sm-down d-none d-lg-block" src="images/border-top-right.png" />
+  <img class="image-border top-left hidden-sm-down d-none d-lg-block" src="images/border-top-right.png" />
   <div class="row main">
     <div class="welcome col-lg-6">
       <div class="content">
-        <h1>Becky & Joel</h1>
-        <img src="images/beckyandjoel.jpg" class="d-inline-block d-lg-none"/>
-        <h2>We're Getting Married!</h2>
-        <p>
-          Help us celebrate! We will have a short ceremony followed by an evening of music and margaritas. Dinner will be catered, likely mexican but the menu has not yet been determined. Please let us know if you will be joining us and RSVP Below.
-        </p>
-        <p><span class="font-weight-bold">When:</span> Saturday April 27th</p>
-        <p><span class="font-weight-bold">Where:</span> Our Backyard</p>
-        <i class="fa fa-angle-down read-more"></i>
+        <div class="row">
+          <div class="col-12">
+            <h1>Becky & Joel</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-12 d-inline-block d-lg-none">
+            <img src="images/beckyandjoel.jpg" class="w-100 mb-4" />
+          </div>
+          <div class="col-12 col-sm-6 col-lg-12">
+            <h2>We're Getting Married!</h2>
+            <p>
+              Help us celebrate! We will have a short ceremony followed by an evening of music and margaritas. Dinner will be catered, likely mexican but the menu has not yet been determined. Please let us know if you will be joining us and RSVP Below.
+            </p>
+            <p><span class="font-weight-bold">When:</span> Saturday April 27th</p>
+            <p><span class="font-weight-bold">Where:</span> Our Backyard</p>
+          </div>
+          <i class="fa fa-angle-down read-more d-none d-md-block"></i>
+      </div>
       </div>
     </div>
     <div class="photo col-lg-6 d-none d-lg-flex"></div>
@@ -54,8 +64,8 @@
             action="https://jarmey.wufoo.com/forms/zjrj2931h75ifv/#public">
         <h2 class="dark mb-3">RSVP</h2>
         <ul class="row">
-          <div class="col-6">
-            <li id="foli109" data-wufoo-field data-field-type="text" class="notranslate      ">
+          <div class="col-12 col-sm-6">
+            <li id="foli109" data-wufoo-field data-field-type="text" class="notranslate">
               <label class="desc" id="title109" for="Field109">
                 Name
                 <span id="req_109" class="req">*</span>
@@ -65,15 +75,16 @@
               </div>
             </li>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <li id="foli115">
               <label class="desc notranslate" id="title115" for="Field115">
                 Attending?
+                <span id="req_115" class="req">*</span>
               </label>
               <div>
                 <select id="Field115" name="Field115" class="field select medium form-control" tabindex="2" data-wufoo-field="dropdown" >
                   <option
-                      value="" >
+                      value="">
                     <span class="notranslate"></span>
                   </option>
                   <option
@@ -92,17 +103,17 @@
               </div>
             </li>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <li id="foli4" class="notranslate">
-              <label class="desc" id="title4" for="Field4">
-                How many guests?
+              <label class="desc" id="title117" for="Field117">
+                How Many guests?
               </label>
               <div>
-                <input id="Field4" name="Field4" type="text" class="field text nospin medium form-control"  value="" tabindex="3" onkeyup="" placeholder="" />
+                <input id="Field117" name="Field117" type="text" class="field text medium" value="" maxlength="255" tabindex="3" onkeyup="" placeholder="" />
               </div>
             </li>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <li id="foli113" class="notranslate">
               <label class="desc" id="title113" for="Field113">
                 Email (optional)
@@ -113,30 +124,22 @@
             </li>
           </div>
           <div class="col-12">
-          <li id="foli105"
-              class="notranslate"><label class="desc" id="title105" for="Field105">
-            Comments? (optional)
-          </label>
-
+          <li id="foli105" class="notranslate"><label class="desc" id="title105" for="Field105">Comments? (optional)</label>
             <div>
               <textarea id="Field105"
                         name="Field105"
                         class="field textarea medium form-control"
                         spellcheck="true"
-                        rows="3" cols="50"
+                        rows="3"
                         tabindex="5"
-                        onkeyup=""
-                        placeholder=""
-              ></textarea>
+                        ></textarea>
             </div>
           </li>
           </div>
           <div class="col-12">
             <li class="buttons">
               <div>
-                <input id="saveForm" name="saveForm" class="btTxt submit btn"
-                       type="submit" value="Send"
-                />
+                <input id="saveForm" name="saveForm" class="btTxt submit btn" type="submit" value="Send" />
               </div>
             </li>
           </div>

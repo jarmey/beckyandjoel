@@ -1,0 +1,21 @@
+/* Buttons */
+.btn.btn-secondary {
+  background: #eda7a8;
+  border-color: #ee8183;
+
+  &:hover {
+    background: #ee8183;
+    border-color: #ee8183;
+  }
+}
+
+/* Modal */
+.modal {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+
+  .close span {
+    font-family: serif;
+    font-weight: normal;
+  }
+}
